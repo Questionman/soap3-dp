@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SOAP3-dp
 
 SOAP3-dp, like its predecessor SOAP3, is a GPU-based software for aligning short reads to a reference sequence. It improves SOAP3 in terms of both speed and sensitivity by skillful exploitation of whole-genome indexing and dynamic programming on a GPU. SOAP3 is limited to find alignments with at most 4 mismatches, while SOAP3-dp can find alignments involving mismatches, INDELs, and small gaps. The number of reads aligned, especially for paired-end data, typically increases 5 to 10 percent from SOAP3 to SOAP3-dp. More interestingly, SOAP3-dp's alignment time is much shorter than SOAP3, as it is found that GPU-based dynamic programming when coupled with indexing can be much more efficient. For example, when aligning length-100 single-end reads with the human genome, SOAP3 typically requires tens of seconds per million reads, while SOAP3-dp takes only a few seconds.
@@ -580,3 +581,6 @@ This parameter defines the maximum length allowed for the read descriptions insi
 The parameters used for the dynamic programming can be updated according to different requirement. For example, for a very tight alignment of allowing at most 4 mismatches/insertions/deletions, assuming the read length is 100, one may set the match score as 1, mismatch/gap-open/gap-extension score as -10, and the threshold as 55.
 
 \*\* [ Due to historical reason,there is another ini file soap3-dp-builder.ini, which is needed by the index builder program. Users are not recommended to change the parameters in this ini file. Note that soaps3builder.ini and the program soap3-dp-builder can be kept in the same or different directory the same way as soap3-dp.ini and soap3-dp. See above. ]
+=======
+# soap3-dp
+>>>>>>> ec7493b2a52d312702a6c688ccdf48aba1a1aec2
