@@ -1,5 +1,7 @@
 # SOAP3-dp
 
+<b>This is from https://github.com/aquaskyline/SOAP3-dp and I(Questionman) don't have any copyright.</b>
+
 SOAP3-dp, like its predecessor SOAP3, is a GPU-based software for aligning short reads to a reference sequence. It improves SOAP3 in terms of both speed and sensitivity by skillful exploitation of whole-genome indexing and dynamic programming on a GPU. SOAP3 is limited to find alignments with at most 4 mismatches, while SOAP3-dp can find alignments involving mismatches, INDELs, and small gaps. The number of reads aligned, especially for paired-end data, typically increases 5 to 10 percent from SOAP3 to SOAP3-dp. More interestingly, SOAP3-dp's alignment time is much shorter than SOAP3, as it is found that GPU-based dynamic programming when coupled with indexing can be much more efficient. For example, when aligning length-100 single-end reads with the human genome, SOAP3 typically requires tens of seconds per million reads, while SOAP3-dp takes only a few seconds.
 
   * [Hardware and Platform](#Section1)
